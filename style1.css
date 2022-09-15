@@ -1,0 +1,65 @@
+/* style1.css */
+
+/* element/tag selector */
+table {
+  background-color: rgba(201, 76, 76, 0.3);
+  text-align:left
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+/* class selector */
+.pink-background{
+  background-color: rgba(201, 76, 76, 0.3);
+}
+
+.light-blue-background{
+  background-color: #80ced6;
+}
+
+.green-background{
+  background-color: hsla(89, 43%, 51%, 0.3);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* id selector */
+#blue-background {
+  background-color:#92a8d1;
+}
+
+#red-background {
+  background-color: rgb(201, 76, 76);
+}
+
+#box_1 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(201, 76, 76);
+  padding: 50px;
+  margin: 20px;
+}
