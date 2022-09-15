@@ -1,0 +1,8 @@
+/*style1_mobile.css*/
+
+/*mobile-view*/
+@media (max-width: 640px){
+  body {
+    background-color: yellow;
+  }
+}
