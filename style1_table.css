@@ -1,0 +1,8 @@
+/*style1_tablet.css*/
+
+/*tablet-view*/
+@media (min-width: 641px) and (max-width: 768px) {
+  body {
+      background-color: orange;
+  }
+}
