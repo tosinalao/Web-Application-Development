@@ -3,6 +3,7 @@
 /*tablet-view*/
 @media (min-width: 641px) and (max-width: 768px) {
   body {
-      background-color: orange;
+      background-color: #CF9FFF;
   }
 }
+
