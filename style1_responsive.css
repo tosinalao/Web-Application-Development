@@ -1,0 +1,19 @@
+/*style1_responsive.css*/
+@media print{
+  .screen_only {
+    display:none;
+  }
+}
+
+@media screen{
+  .print_only {
+    display:none;
+  }
+}
+
+/*computer-view*/
+@media(min-width: 769px){
+  body {
+    background-color: white;
+  }
+}
