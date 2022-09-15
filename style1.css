@@ -1,9 +1,18 @@
 /* style1.css */
 
 /* element/tag selector */
-table {
-  background-color: rgba(201, 76, 76, 0.3);
-  text-align:left
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px;
+  text-align: left;
+}
+
+table.names {
+  width: 30;
 }
 
 /* unvisited link */
@@ -57,9 +66,9 @@ a:visited {
 }
 
 #box_1 {
-  background-color: lightgrey;
-  width: 300px;
-  border: 15px solid rgb(201, 76, 76);
-  padding: 50px;
-  margin: 20px;
+  background-color: #d3d3d3;
+  width: 200px;
+  border: 10px solid rgb(201, 76, 76);
+  padding: 40px;
+  margin: 15px;
 }
