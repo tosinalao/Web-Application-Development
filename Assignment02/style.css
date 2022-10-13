@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
+
+/* Resetting the document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background-color: #53d4ef;
+  padding: 30px 40px;
+  color: black;
+  text-align: center;
+}
+
+h1, form {
+  font-family: 'Alkalami', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 15px;;
+}
+
+input {
+  margin-right: 0;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  font-family: Seaweed Script, cursive;
+  text-align: center;
+}
+
+select{
+  width: 10%;
+  font-family: 'Alkalami', sans-serif;
+  background-color: #FFF;
+}
+
+.submitBtn {
+  width: 8%;
+  padding: 10px;
+  margin-left:0;
+  background: #d9d9d9;
+  color: #000000;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+}
+
+.submitBtn:hover {
+  background-color: #bbb;
+  color: #FFF;
+}
+
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  font-family: Alkalami, sans-serif;
+}
+
+/* Set all even list items to a different color (zebra-stripes) */
+ul li:nth-child(even) {
+  background: #b2bec3;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
