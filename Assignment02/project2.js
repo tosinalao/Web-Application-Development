@@ -1,0 +1,74 @@
+document.addEventListener('DOMContentLoaded', function() {
+var todo = [];
+document.querySelector('#new-task').onsubmit = function (event){
+event.preventDefault();
+const li = document.createElement('li');
+let task_text = document.querySelector('#task-title').value;
+let task_priority = document.querySelector('#task-priority').value;
+let task_status;
+let task_status_values = document.querySelectorAll('[name=task-status]');
+
+for (let i = 0; i< task_status_values.length;i++){
+if (task_status_values[i].checked){
+task_status = task_status_values[i].value;
+}
+}
+
+let task_html = `<div class = "new-task-html"> <table style="width:100%;border:1px solid black;">
+  <tr>
+    <td style ="border:1px solid black;text-align:center;"><span>Task - ${task_text} </span></td>
+    <td style ="border:1px solid black;text-align:center;"><span> Priority - ${task_priority} </span></td>
+    <td style = "border:1px solid black;text-align:center;"><span> Status - ${task_status} </span></td>
+  </tr>
+</table></div>
+
+<button class = "mark-complete" style="width: 10%;
+padding: 10px;
+margin-left:0;
+background: #d9d9d9;
+color: #000000;
+text-align: center;
+font-size: 12px;
+cursor: pointer;
+transition: 0.3s;
+font-family: Verdana, Geneva, sans-serif;
+font-weight: bold"> Completed </button>
+
+<button class = "remove" style="width: 10%;
+padding: 10px;
+margin-left:0;
+background: #d9d9d9;
+color: #000000;
+text-align: center;
+font-size: 12px;
+cursor: pointer;
+transition: 0.3s;
+font-family: Verdana, Geneva, sans-serif;
+font-weight: bold"> Remove </button>`;
+
+li.innerHTML = task_html
+
+if (task_text == "") {
+  alert("Enter task info");
+} else {
+todo.push(task_text);
+document.querySelector('#task_list').append(li);
+document.querySelector('#task-title').value = '';
+return false;
+}
+};
+
+
+document.addEventListener('click', function(event){
+element = event.target;
+if (element.className === 'remove'){
+element.parentElement.remove();
+}
+if (element.className === 'mark-complete' || element.className === 'completed'){
+element.parentElement.querySelector('.new-task-html').style.textDecoration = "line-through";
+element.task_status = "completed";
+}
+})
+
+
+});
