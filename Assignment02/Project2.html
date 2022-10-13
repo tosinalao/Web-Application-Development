@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Project 2 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src = "project2.js"> </script>
+    <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <header>
+    <h1>My To Do List</h1>
+      <form id = "new-task">New Task
+        <input type="text" class = "task-title" id = "task-title" autocomplete="off" autofocus placeholder="Things to be done..."> <div> </div>
+        <br>
+        <label for = "task-priority">Task Priority</label>
+        <select name = "task-priority" id = "task-priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <div> </div>
+          <br>
+        <label for = "task-status">Task Status</label>
+        <input class = "task-status" name = "task-status" type = "radio" value = "pending"> Pending
+        <input class = "task-status" name = "task-status" type = "radio" value = "completed"> Completed
+        <input class="submitBtn" id="submit_button" type = "submit"></input>
+
+      </form>
+  </header>
+    <ul id = "task_list">
+
+    </ul>
+</body>
+</html>
 
