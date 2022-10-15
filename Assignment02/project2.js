@@ -3,18 +3,18 @@ var todo = [];
 document.querySelector('#new-task').onsubmit = function (event){
 event.preventDefault();
 const li = document.createElement('li');
-let task_text = document.querySelector('#task-title').value;
-let task_priority = document.querySelector('#task-priority').value;
-let task_status;
-let task_status_values = document.querySelectorAll('[name=task-status]');
+var task_text = document.querySelector('#task-title').value;
+var task_priority = document.querySelector('#task-priority').value;
+var task_status;
+var task_status_values = document.querySelectorAll('[name=task-status]');
 
-for (let i = 0; i< task_status_values.length;i++){
+for (var i = 0; i< task_status_values.length;i++){
 if (task_status_values[i].checked){
 task_status = task_status_values[i].value;
 }
 }
 
-let task_html = `<div class = "new-task-html"> <table style="width:100%;border:1px solid black;">
+var task_html = `<div class = "new-task-html"> <table style="width:100%;border:1px solid black;">
   <tr>
     <td style ="border:1px solid black;text-align:center;"><span>Task - ${task_text} </span></td>
     <td style ="border:1px solid black;text-align:center;"><span> Priority - ${task_priority} </span></td>
