@@ -48,8 +48,8 @@ font-weight: bold"> Remove </button>`;
 
 li.innerHTML = task_html
 
-if (task_text == "") {
-  alert("Enter task info");
+if (task_text == "" || task_priority =="") {
+  alert("Enter all task information");
 } else {
 todo.push(task_text);
 document.querySelector('#task_list').append(li);
