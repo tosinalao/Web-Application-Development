@@ -22,7 +22,7 @@ var task_html = `<div class = "new-task-html"> <table style="width:100%;border:1
   </tr>
 </table></div>
 
-<button class = "mark-complete" style="width: 10%;
+<button class = "mark-as-complete" style="width: 10%;
 padding: 10px;
 margin-left:0;
 background: #d9d9d9;
@@ -61,7 +61,7 @@ return false;
 
 document.addEventListener('click', function(event){
 element = event.target;
-if (element.className === 'mark-complete' || element.className === 'completed'){
+if (element.className === 'mark-as-complete' || element.className === 'completed'){
 element.parentElement.querySelector('.new-task-html').style.textDecoration = "line-through";
 element.task_status = "completed";
 }
