@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-var todo = [];
+const todo = [];
 document.querySelector('#new-task').onsubmit = function (event){
 event.preventDefault();
 const li = document.createElement('li');
