@@ -61,12 +61,12 @@ return false;
 
 document.addEventListener('click', function(event){
 element = event.target;
-if (element.className === 'remove'){
-element.parentElement.remove();
-}
 if (element.className === 'mark-complete' || element.className === 'completed'){
 element.parentElement.querySelector('.new-task-html').style.textDecoration = "line-through";
 element.task_status = "completed";
+}
+if (element.className === 'remove'){
+element.parentElement.remove();
 }
 })
 
