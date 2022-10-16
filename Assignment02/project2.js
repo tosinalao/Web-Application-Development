@@ -21,7 +21,6 @@ var task_html = `<div class = "new-task-html"> <table style="width:100%;border:1
     <td style = "border:1px solid black;text-align:center;"><span> Status - ${task_status} </span></td>
   </tr>
 </table></div>
-
 <button class = "mark-as-complete" style="width: 10%;
 padding: 10px;
 margin-left:0;
@@ -33,7 +32,6 @@ cursor: pointer;
 transition: 0.3s;
 font-family: Verdana, Geneva, sans-serif;
 font-weight: bold"> Completed </button>
-
 <button class = "remove" style="width: 10%;
 padding: 10px;
 margin-left:0;
