@@ -33,7 +33,7 @@ input {
 }
 
 select{
-  width: 15;
+  width: 15%;
   font-family: 'Alkalami', sans-serif;
 }
 
@@ -43,7 +43,7 @@ option{
 }
 
 .submitBtn {
-  width: 10%;
+   width: 10%;
    border: none;
    outline: none;
    background: #2f2f2f;
@@ -61,7 +61,6 @@ option{
   background-color: #bbb;
   color: #FFF;
 }
-
 
 /* Style the list items */
 ul li {
