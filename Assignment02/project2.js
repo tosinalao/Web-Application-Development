@@ -3,7 +3,7 @@ const todo = [];
 document.querySelector('#task').onsubmit = function (event){
 event.preventDefault();
 const li = document.createElement('li');
-var task_text = document.querySelector('#task-title').value;
+var task_text = document.querySelector('#title-of-task').value;
 var task_priority = document.querySelector('#task-priority').value;
 var task_status;
 var task_status_values = document.querySelectorAll('[name=task-status]');
@@ -51,7 +51,7 @@ if (task_text == "" || task_priority =="") {
 } else {
 todo.push(task_text);
 document.querySelector('#task_array').append(li);
-document.querySelector('#task-title').value = '';
+document.querySelector('#title-of-task').value = '';
 return false;
 }
 };
