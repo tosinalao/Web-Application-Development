@@ -6,7 +6,7 @@ const li = document.createElement('li');
 var task_text = document.querySelector('#title-of-task').value;
 var task_priority = document.querySelector('#priority-of-task').value;
 var task_status;
-var task_status_values = document.querySelectorAll('[name=task-status]');
+var task_status_values = document.querySelectorAll('[name=status-of-task]');
 
 for (var i = 0; i< task_status_values.length;i++){
 if (task_status_values[i].checked){
