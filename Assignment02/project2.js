@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 const todo = [];
-document.querySelector('#new-task').onsubmit = function (event){
+document.querySelector('#task').onsubmit = function (event){
 event.preventDefault();
 const li = document.createElement('li');
 var task_text = document.querySelector('#task-title').value;
@@ -14,7 +14,7 @@ task_status = task_status_values[i].value;
 }
 }
 
-var task_html = `<div class = "new-task-html"> <table style="width:100%;border:1px solid black;">
+var task_html = `<div class = "task-html"> <table style="width:100%;border:1px solid black;">
   <tr>
     <td style ="border:1px solid black;text-align:center;"><span>Task - ${task_text} </span></td>
     <td style ="border:1px solid black;text-align:center;"><span> Priority - ${task_priority} </span></td>
@@ -60,7 +60,7 @@ return false;
 document.addEventListener('click', function(event){
 element = event.target;
 if (element.className === 'mark-as-complete' || element.className === 'completed'){
-element.parentElement.querySelector('.new-task-html').style.textDecoration = "line-through";
+element.parentElement.querySelector('.task-html').style.textDecoration = "line-through";
 element.task_status = "completed";
 }
 if (element.className === 'remove'){
