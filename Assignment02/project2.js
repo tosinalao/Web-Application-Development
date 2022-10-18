@@ -50,7 +50,7 @@ if (task_text == "" || task_priority =="") {
   alert("Enter all task information");
 } else {
 todo.push(task_text);
-document.querySelector('#task_array').append(li);
+document.querySelector('#array_for_tasks').append(li);
 document.querySelector('#title-of-task').value = '';
 return false;
 }
